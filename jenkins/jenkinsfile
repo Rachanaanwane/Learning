@@ -7,7 +7,9 @@ pipeline {
             }
         }
         stage('second stage'){
-            echo "my name is rachana"
+           steps{
+                 echo "my name is rachana"
+           } 
         }
     }
 }
