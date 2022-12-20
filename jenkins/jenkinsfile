@@ -11,5 +11,10 @@ pipeline {
                  echo "my name is rachana"
            } 
         }
+        stage('Third stage'){
+            steps{
+                echo "Hello"
+            }
+        }
     }
 }
