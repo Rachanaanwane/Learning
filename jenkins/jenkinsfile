@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+    stages{
+        stage('first stage'){
+            steps{
+                git branch: 'main', changelog: false, credentialsId: '3d1033b6-a594-4767-b5fe-e2927fba71fb', poll: false, url: 'https://github.com/Rachanaanwane/Learning.git'
+            }
+        }
+        stage('second stage'){
+            echo "my name is rachana"
+        }
+    }
+}
